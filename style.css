@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #00b39b;
+}
+.active {
+  color: #00b39b;
+}
+
+header {
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header nav img {
+  width: 200px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.container {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.drop-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -50px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 8px;
+  display: none;
+}
+.drop-link {
+  position: relative;
+}
+.drop-menu a {
+  padding: 8px;
+}
+.drop-menu a:hover {
+  background-color: whitesmoke;
+}
+
+.drop-link:hover > .drop-menu {
+  display: flex;
+}
+
+.landing {
+  text-align: center;
+}
+
+.landing > * {
+  margin-top: 30px;
+}
+.landing h1 {
+  font-weight: 300;
+  font-size: 2em;
+  color: #00b39b;
+}
+
+::selection {
+  color: white;
+  background: #00b39b;
+}
+
+.para {
+  display: flex;
+  margin-top: 100px;
+  gap: 50px;
+  line-height: 2em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.card {
+  width: 30%;
+  padding: 32px;
+  color: white;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+.card select {
+  margin-top: 80px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+}
+
+select option {
+  color: black;
+}
+
+.black {
+  background-color: #1b2734;
+}
+
+.blue {
+  background-color: #3d83df;
+}
+.green {
+  background-color: #00b39b;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 90px;
+}
+
+.brands p {
+  font-size: 1.6em;
+  width: 300px;
+  color: #00b39b;
+}
+
+.brands .logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+svg {
+  width: 150px;
+  fill: rgb(195, 195, 195);
+  cursor: pointer;
+}
+
+svg:hover {
+  fill: #00b39b;
+}
+
+.platform {
+  background: #e5faf8;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 204, 177, 0.01) 5%,
+    rgba(61, 199, 223, 0.1)
+  );
+  height: 700px;
+  margin-top: 100px;
+  background-image: url("https://www.docplanner.com/img/logo.png");
+  background-repeat: no-repeat;
+  background-position-x: 150px;
+  background-position-y: 145%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.plat {
+  display: flex;
+  gap: 50px;
+}
+
+.plat .content h1 {
+  font-weight: 300;
+  color: #00b39b;
+  font-size: 2.2em;
+}
+.plat .content p {
+  font-weight: 300;
+  color: gray;
+  margin-top: 30px;
+}
+.boxes {
+  display: grid;
+  grid-template-areas:
+    "b1 b2"
+    "b3 b4";
+  gap: 30px;
+}
+.box {
+  width: 200px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid rgb(197, 197, 197);
+  text-align: center;
+}
+
+.b1,
+.b3 {
+  margin-top: 10px;
+}
+.btn{
+  margin-left: 120px;
+  background-color: #3d83df;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  border-radius: 4px;
+ 
+  border: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  cursor: pointer;
+ 
+}
+.button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.places {
+display:flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+padding-top: 100px;
+
+
+
+}
+.places button{
+margin-left: 120px;
+  background-color: #3d83df;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  border-radius: 4px;
+ 
+  border: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  cursor: pointer;
+ 
+
+
+}
+.footer a{
+color: #747474;
+}
+
+
+.link{
+display: flex;
+justify-content: center ;
+font-size: 12px;
+color: #ababab;
+padding-top: 150px;
+}
+.foot p{
+color: #ababab;
+display: flex;
+justify-content: center ;
+font-size: 12px;
+}
